@@ -1,0 +1,12 @@
+real_data
+synthetic_data
+templabels
+labeled_synthetic_data
+datasets/real_dataset
+datasets/synthetic_01
+datasets/combined_rgb
+datasets/real_dataset.yaml
+datasets/synthetic_01.yaml
+datasets/combined_rgb.yaml
+outputs/combined_rgb/yolo_test
+outputs/combined_rgb/yolo_test.json

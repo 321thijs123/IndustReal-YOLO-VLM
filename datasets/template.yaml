@@ -1,0 +1,36 @@
+# Dataset root directory relative to the yolov5 directory
+path: template
+
+# Train/val/test sets: specify directories, *.txt files, or lists
+train: images/train # 128 images for training
+val: images/val # 128 images for validation
+test: images/test # Optional path to test images
+
+# Labels present in real dataset: 1 2 4 6 7 11 15 16 21 22 25 27
+# Labels present in synthetic set: 1 2 3 4 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
+# Classes (example using 80 COCO classes)
+names:
+    0: "Unkown - 0"
+    1: "10000000000"
+    2: "10010010000"
+    3: "10010100000"
+    4: "10010110000"
+    5: "11100000000"
+    6: "11110010000"
+    7: "11110100000"
+    8: "11110110000"
+    9: "11110111100"
+    10: "11110111110"
+    11: "11110110001"
+    12: "11110111101"
+    13: "11110111111"
+    14: "11110101111"
+    15: "11110011111"
+    16: "11110011110"
+    17: "11110101110"
+    18: "11100001110"
+    19: "11101101110"
+    20: "11101011110"
+    21: "11101111110"
+    22: "11101111111"
+    23: "Unknown - 23"

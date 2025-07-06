@@ -1,0 +1,1140 @@
+{
+    "info": {
+        "num_frames": 16,
+        "frames_before": 32,
+        "frames_after": 32,
+        "interval": 32,
+        "offset": 0,
+        "prompt": "\nYou are analyzing a video that shows the assembly of a toy car. Your task is to provide a structured textual analysis that includes:\n\n1. Which components are already installed.\n2. Do NOT count duplicate or unused parts in piles unless they are clearly part of an assembly.\n\nUse the information below to match the parts/components accurately:\n\nPARTS (individual items):\nRed:\n- 5x nut\n- 1x front wing (2x3 T Shape with sloped front)\n- 1x cap nut (Elongated rounded cap)\n- 1x pulley\n- 4x washer\n\nBlack:\n- 4x wheel\n\nGray:\n- 5x Pin\n- 2x Axle\n\nWhite:\n- 1x 1x1x4 beam\n- 4x 1x4 straight flat plate\n- 2x 2x6 L-shape flat plate\n- 1x 1x2x3 U-shape\n\nCOMPONENTS (individual parts or assembled from multiple parts):\n- Base = 1x1x4 beam + pin\n- Front chassis = 2x 1x4 straight flat plate\n- Front chassis pin = pin + nut\n- Rear chassis = 2x 2x6 L-shape flat plate\n- Short rear chassis = 2x 1x4 straight flat plate\n- Front rear chassis pin = pin + nut\n- Rear rear chassis pin = pin + nut\n- Front bracket: 1x2x3 U-Shape\n- Front bracket screw: pin + cap nut\n- Front wheel assembly: wing + axle + 2x washer + 2x wheel + nut\n- Rear wheel assembly: pulley + axle + 2x washer + 2x wheel + nut\n\nASSEMBLY:\nThe final product is a toy car that includes the components listed above.\n\nPlease analyze the video and return:\n- A list of **components or parts installed**\n- Be concise, minimize unneeded text, but maximize information.\n- Note that parts may be visible but not installed, do not count those.\n\nThe response must not exceed 350 tokens so be concise.\n"
+    },
+    "outputs": {
+        "03_assy_0_1_000709_04.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_000741_04.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_000786_04.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_001187_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_001270_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_001314_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_001788_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_001917_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_001949_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_001981_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_002158_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_002190_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_002222_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_002326_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_002358_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_0_1_002390_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_1_3_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_1_3_000064_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_1_3_000096_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_1_3_000128_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White flat plate\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_1_3_000519_04.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_1_3_000551_04.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_1_3_000583_04.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_1_3_000902_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_1_3_000934_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_assy_1_3_002593_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_main_0_1_000452_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_main_0_1_000767_19.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_main_0_1_000878_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "03_main_0_1_000954_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_000618_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_000650_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_000682_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_000714_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_001356_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_001388_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_001420_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_002172_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_002208_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_002474_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_002506_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_002553_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_002585_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_002645_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_002677_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_002709_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_002741_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_003651_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_003794_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_003826_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_003858_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_003890_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_003922_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White flat plate\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_0_1_003954_11.png": [
+            "Components installed:\n- Red: 5x nut, 1x front wing (2x3 Shape with sloped front), 1x cap nut (elongated rounded cap), 1x pulley, 4x washer\n- Black: 4x wheel\n- Gray: 5x Pin, 2x Axle\n- White: 1x 1x1x4 beam, 4x 1x4 straight plate, 2x 2x6 L-shape flat plate, 1x 1x2x3 U-shape\n- Front chassis: 2x 1x4 straight plate, Front chassis pin = pin + nut\n- Rear chassis: 2x 2x6 L-shape flat plate, Rear chassis pin = pin + nut\n- Front bracket: 1x2x3 U-Shape\n- Front wheel assembly: wing + axle + 2x washer + 2x wheel + nut\n- Rear wheel assembly: pulley + axle + 2x washer + 2x wheel + nut"
+        ],
+        "08_assy_0_1_005237_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_000286_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_000318_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_000350_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_000399_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_000431_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_000462_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_000712_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_000969_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_001001_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_001062_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_002074_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_002106_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_002138_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_002507_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_002530_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_002543_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_002566_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_assy_2_4_002594_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_000253_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_000285_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_000317_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_000387_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_000681_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_000744_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_001246_19.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_001460_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_001492_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_001524_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_001556_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_001588_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White flat plate\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_001620_21.png": [
+            "Components installed:\n- Red: 5x nut, 1x front wing (2x3 Shape with sloped front), 1x cap nut (elongated rounded cap), 1x pulley, 4x washer\n- Black: 4x wheel\n- Gray: 5x Pin, 2x Axle\n- White: 1x 1x1x4 beam, 4x 1x4 straight plate, 2x 2x6 L-shape flat plate, 1x 1x2x3 U-shape\n- Front chassis: 2x 1x4 straight plate, Front chassis pin = pin + nut\n- Rear chassis: 2x 2x6 L-shape flat plate, Rear chassis pin = pin + nut\n- Front bracket: 1x2x3 U-Shape\n- Front wheel assembly: wing + axle + 2x washer + 2x wheel + nut\n- Rear wheel assembly: pulley + axle + 2x washer + 2x wheel + nut"
+        ],
+        "08_main_0_1_001652_21.png": [
+            "Components installed:\n- Red: 5x nut, 1x front wing (2x3 T shape with sloped front), 1x cap nut (elongated rounded cap), 1x pulley, 4x washer\n- Black: 4x wheel\n- Gray: 5x Pin, 2x Axle\n- White: 1x 1x4 beam, 4x 1x4 flat plate, 2x 2x6 L-shape flat plate, 1x 1x2x3 U-shape\n- Front chassis: 2x 1x4 straight plate, Front chassis pin = pin + nut\n- Rear chassis: 2x 2x6 L-shape flat plate, Rear chassis pin = pin + nut\n- Front bracket: 1x2x3 U-Shape\n- Front wheel assembly: wing + axle + 2x washer + 2x wheel + nut\n- Rear wheel assembly: pulley + axle + 2x washer + 2x wheel + nut"
+        ],
+        "08_main_0_1_001684_21.png": [
+            "Components installed:\n- Red: 5x nut, 1x front wing (2x3 T shape with sloped front), 1x cap nut (elongated rounded cap), 1x pulley, 4x washer\n- Black: 4x wheel\n- Gray: 5x Pin, 2x Axle\n- White: 1x 1x4 beam, 4x 1x4 flat plate, 2x 2x6 L-shape flat plate, 1x 1x2x3 U-shape\n- Front chassis: 2x 1x4 straight plate, Front chassis pin = pin + nut\n- Rear chassis: 2x 2x6 L-shape flat plate, Rear chassis pin = pin + nut\n- Front bracket: 1x2x3 U-shape\n- Front wheel assembly: wing + axle + 2x washer + 2x wheel + nut\n- Rear wheel assembly: pulley + axle + 2x washer + 2x wheel + nut"
+        ],
+        "08_main_0_1_001716_21.png": [
+            "Components installed:\n- Red: 5x nut, 1x front wing (2x3 T shape with sloped front), 1x cap nut (elongated rounded cap), 1x pulley, 4x washer\n- Black: 4x wheel\n- Gray: 5x Pin, 2x Axle\n- White: 1x 1x4 beam, 4x 1x4 straight plate, 2x 2x6 L-shape flat plate, 1x 1x2x3 U-shape\n- Front chassis: 2x 1x4 straight plate, Front chassis pin = pin + nut\n- Rear chassis: 2x 2x6 L-shape flat plate, Rear chassis pin = pin + nut\n- Front bracket: 1x2x3 U-shape\n- Front wheel assembly: wing + axle + 2x washer + 2x wheel + nut\n- Rear wheel assembly: pulley + axle + 2x washer + 2x wheel + nut"
+        ],
+        "08_main_0_1_001748_21.png": [
+            "Components installed:\n- Red: 5x nut, 1x front wing (2x3 T shape with sloped front), 1x cap nut (elongated rounded cap), 1x pulley, 4x washer\n- Black: 4x wheel\n- Gray: 5x pin, 2x Axle\n- White: 1x 1x4 beam, 4x 1x4 flat plate, 2x 2x6 L-shape flat plate, 1x 1x2x3 U-shape\n- Front chassis: 2x 1x4 straight plate, Front chassis pin = pin + nut\n- Rear chassis: 2x 2x6 L-shape flat plate, Rear chassis pin = pin + nut\n- Front bracket: 1x2x3 U-Shape\n- Front wheel assembly: wing + axle + 2x washer + 2x wheel + nut\n- Rear wheel assembly: pulley + axle + 2x washer + 2x wheel + nut"
+        ],
+        "08_main_0_1_002491_22.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_002523_22.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "08_main_0_1_002555_22.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_000722_03.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_001040_04.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_001092_04.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_001553_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_001585_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_001712_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_001744_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_001792_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_001833_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_001851_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_002303_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_002335_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_002753_12.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_002785_12.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_0_1_003445_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_001077_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_001109_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_001473_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_001505_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_001537_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_001569_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_001601_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White flat plate\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_002245_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_002277_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_002852_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_assy_3_1_003784_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_000357_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_000389_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_000421_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_000453_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_000485_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White flat plate\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_000546_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_000578_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_000757_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_001773_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_001805_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_002478_22.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "09_main_0_1_002510_22.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_0_1_000324_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_0_1_000345_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_0_1_000358_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_0_1_000390_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_0_1_000642_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_0_1_000893_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_0_1_000925_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_0_1_001217_09.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_0_1_001249_09.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_0_1_001955_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_3_2_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_3_2_000317_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_3_2_000349_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_3_2_000381_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_3_2_000413_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_3_2_001074_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_assy_3_2_001730_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_main_0_1_000032_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_main_0_1_000235_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_main_0_1_000389_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_main_0_1_001086_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_main_3_4_000032_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_main_3_4_000263_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "10_main_3_4_001309_22.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_000175_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_000207_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_000239_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_000256_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_000543_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_000591_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_000993_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_001260_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_001439_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_001471_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_001952_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_001991_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_002394_12.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_002443_12.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_0_1_002479_12.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_3_4_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_3_4_000309_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_3_4_001035_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_3_4_001086_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_3_4_001224_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_3_4_001256_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_3_4_001288_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_3_4_001323_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_3_4_001437_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_assy_3_4_002000_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_main_0_1_000339_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_main_0_1_000371_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_main_0_1_000403_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_main_0_1_000435_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_main_0_1_000473_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_main_0_1_001444_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_main_0_1_001476_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_main_0_1_001487_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "12_main_0_1_001489_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_000406_03.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_000617_04.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_000649_04.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_000992_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_001024_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_001546_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_001571_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_001592_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_001998_12.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_002020_12.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_assy_0_1_002039_12.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_0_1_000041_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_0_1_000244_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_0_1_000349_17.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_0_1_000450_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_0_1_000501_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_0_1_000784_19.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_0_1_000967_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_1_3_000127_15.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_1_3_000276_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_1_3_000308_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_1_3_000340_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_1_3_000372_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_1_3_000404_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White flat plate\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_1_3_000436_18.png": [
+            "Components installed:\n- Red: 5x nut, 1x front wing (2x3 Shape with sloped front), 1x cap nut (elongated rounded cap), 1x pulley, 4x washer\n- Black: 4x wheel\n- Gray: 5x Pin, 2x Axle\n- White: 1x 1x1x4 beam, 4x 1x4 straight plate, 2x 2x6 L-shape flat plate, 1x 1x2x3 U-shape\n- Front chassis: 2x 1x4 straight plate, Front chassis pin = pin + nut\n- Rear chassis: 2x 2x6 L-shape flat plate, Rear chassis pin = pin + nut\n- Front bracket: 1x2x3 U-Shape\n- Front wheel assembly: wing + axle + 2x washer + 2x wheel + nut\n- Rear wheel assembly: pulley + axle + 2x washer + 2x wheel + nut"
+        ],
+        "13_main_1_3_000510_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_1_3_000542_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_1_3_000884_19.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_1_3_001095_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_2_1_000032_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_2_1_000257_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_2_1_000358_17.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_2_1_000545_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_2_1_000577_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_2_1_000609_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_2_1_001178_17.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_2_1_001557_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "13_main_2_1_002342_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000479_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000511_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000566_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000598_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000630_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000662_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000694_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White flat plate\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000754_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000786_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_000818_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_001258_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_001506_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_001648_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_001680_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_001712_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_001744_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_001765_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_002047_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_002079_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_002463_09.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_002495_09.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_0_1_003400_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000037_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000080_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000112_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000144_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000176_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000208_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White flat plate\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000505_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000537_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000569_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000631_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000663_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000695_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_000802_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_001420_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_001452_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_001688_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_001720_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_001752_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_001784_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_001801_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_001833_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_002022_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_002054_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_002120_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_002656_09.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_003373_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_assy_1_5_004133_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_000250_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_000391_17.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_000423_17.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_000455_17.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_000487_17.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_000654_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_000754_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_000787_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_001088_19.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_001120_19.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_001250_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_001282_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "17_main_0_1_001733_22.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_0_1_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_0_1_000767_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_0_1_000799_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_0_1_000849_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_0_1_001298_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_0_1_001588_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_0_1_002197_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_0_1_002482_12.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_0_1_003434_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_2_5_000822_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_2_5_001361_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_2_5_001483_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_2_5_001917_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_2_5_001949_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_2_5_002796_11.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_assy_2_5_004271_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_main_0_1_000032_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_main_0_1_000064_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_main_0_1_000224_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_main_0_1_000337_17.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_main_0_1_000369_17.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_main_0_1_000491_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_main_0_1_001120_19.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_main_0_1_001352_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "18_main_0_1_001974_22.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_0_1_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_0_1_001507_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_0_1_001539_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_0_1_001813_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_0_1_001845_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_0_1_002501_09.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_0_1_002533_09.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_0_1_003203_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_0_1_003235_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_0_1_003903_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_3_5_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_3_5_000472_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_3_5_001109_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_3_5_001254_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_3_5_001475_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_3_5_001507_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_3_5_002181_09.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_3_5_003087_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_3_5_003092_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_assy_3_5_004245_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_main_0_1_000032_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_main_0_1_000268_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_main_0_1_000300_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_main_0_1_000309_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_main_0_1_000926_19.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_main_0_1_001676_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "19_main_0_1_001948_22.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_0_1_000311_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_0_1_000747_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_0_1_000972_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_0_1_001011_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_0_1_001030_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_0_1_001364_09.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_0_1_002120_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_0_1_002561_13.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_000032_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_000064_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_000204_01.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_000667_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_000699_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_000731_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_000742_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_000781_05.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_001410_07.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_001606_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_001642_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_001674_08.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_002307_09.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_002874_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_002906_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_003803_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_assy_1_2_003821_23.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_main_0_1_000171_10.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_main_0_1_000265_17.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_main_0_1_000393_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_main_0_1_000425_18.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black pulley\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White 1x1 beam\n- White 1x4 beam\n- White 1x4 straight plate\n- White 2x6 L-shape\n- White 1x2x3 U-shape\n- Front chassis pin\n- Rear chassis pin\n- Front bracket\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_main_0_1_001015_19.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ],
+        "23_main_0_1_001247_21.png": [
+            "Components installed:\n- Red nut\n- Red pulley\n- Red washer\n- Red cap nut\n- Black wheel\n- Black washer\n- Gray pin\n- Gray axle\n- Gray flat plate\n- White beam\n- White bracket\n- White screw\n- Front wheel assembly\n- Rear wheel assembly"
+        ]
+    }
+}

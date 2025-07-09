@@ -49,6 +49,3 @@ def read_yolo_json(json_path):
 
 def get_labels(file_names):
     return [id_to_label[int(file_name[-6:-4])] for file_name in file_names]
-
-names, yolo_data = read_yolo_json("outputs/combined_rgb/test.json")
-labels = get_labels(names)

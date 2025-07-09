@@ -62,7 +62,8 @@ python3 generate_llava_outputs_addition.py
 
 # Classification
 ## YOLO Only
-
+Follow ``classifying_yolo_only.ipynb``
 
 ## YOLO + VLM
+Follow ``classifying_combined.ipynb``
 

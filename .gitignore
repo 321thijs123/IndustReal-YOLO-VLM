@@ -10,3 +10,5 @@ datasets/synthetic_01.yaml
 datasets/combined_rgb.yaml
 outputs/combined_rgb/yolo_test
 outputs/combined_rgb/yolo_test.json
+classifier_weights/
+__pycache__
